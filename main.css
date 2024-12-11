@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Permanent Marker", cursive;
+}
+
+body {
+    background-color: rgb(226, 143, 19);
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #ff5722 #f0f0f0;
+}
+
+.container {
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    border: 5px solid white;
+    box-shadow: 1px 1px 4px black;
+    position: relative;
+    margin: 10px;
+    background-color: grey; 
+    filter: grayscale(100%); 
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    filter: grayscale(0%); 
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.card .dia {
+    height: 24px;
+    position: absolute;
+    width: 100%;
+    color: azure;
+}
+
+.card .coria1 { background-color: rgb(43, 8, 139); }
+.card .coria2 { background-color: rgb(173, 27, 117); }
+.card .coria3 { background-color: rgb(42, 233, 21); }
+.card .coria4 { background-color: rgb(17, 153, 212); }
+.card .coria5 { background-color: rgb(225, 85, 20); }
+.card .coria6 { background-color: rgb(230, 17, 34); }
+.card .coria7 { background-color: rgb(223, 230, 17); }
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    transition: color 0.3s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff5722;
+    border-radius: 10px;
+}
